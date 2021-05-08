@@ -23,7 +23,7 @@ if (IS_OFFLINE === 'true') {
 app.use(bodyParser.json({ strict: false }));
 
 // ENDPOINTS
-// landing page/ default endpoint
+// landing page/ default
 app.get('/', function (req, res) {
   res.send('Hello World!')
 })

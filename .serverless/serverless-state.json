@@ -213,7 +213,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/my-express-application/dev/1620477100962-2021-05-08T12:31:40.962Z/my-express-application.zip"
+                "S3Key": "serverless/my-express-application/dev/1620509433541-2021-05-08T21:30:33.541Z/my-express-application.zip"
               },
               "Handler": "index.handler",
               "Runtime": "nodejs12.x",
@@ -243,7 +243,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/my-express-application/dev/1620477100962-2021-05-08T12:31:40.962Z/my-express-application.zip"
+                "S3Key": "serverless/my-express-application/dev/1620509433541-2021-05-08T21:30:33.541Z/my-express-application.zip"
               },
               "Handler": "index.handler",
               "Runtime": "nodejs12.x",
@@ -273,7 +273,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/my-express-application/dev/1620477100962-2021-05-08T12:31:40.962Z/my-express-application.zip"
+                "S3Key": "serverless/my-express-application/dev/1620509433541-2021-05-08T21:30:33.541Z/my-express-application.zip"
               },
               "Handler": "index.handler",
               "Runtime": "nodejs12.x",
@@ -296,34 +296,34 @@
               "CreateUserLogGroup"
             ]
           },
-          "CreateUserLambdaVersionVK4ZSGLWZhboggHJvnjT3fUIFWYOFg0BQQy0ZOjt78I": {
-            "Type": "AWS::Lambda::Version",
-            "DeletionPolicy": "Retain",
-            "Properties": {
-              "FunctionName": {
-                "Ref": "CreateUserLambdaFunction"
-              },
-              "CodeSha256": "ksYGIQgKGOGX7capGB4MuiR5FgP/LrYfk6smVaDluQ0="
-            }
-          },
-          "GetUserLambdaVersionS3dHH1f8cao1gKKcsEVDl2cRQxZ8TiMZNKB8qsIx30": {
+          "GetUserLambdaVersionf6xzNW48lbnH3VsKg2bkX9RA0KWYDe6lvAL157U9A": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GetUserLambdaFunction"
               },
-              "CodeSha256": "ksYGIQgKGOGX7capGB4MuiR5FgP/LrYfk6smVaDluQ0="
+              "CodeSha256": "5/mU0mY7gzyJlB+J8bowqG0xmq2FgbSa8ZNBCdAAWhE="
             }
           },
-          "AppLambdaVersionGhswz2VRNC3vbqowP80dv66DpvtjJLC30tpePEAqSYM": {
+          "AppLambdaVersionTZXeenJg5Db8M1RwTYbiKEmaWqZUFL9ajbLC4LI": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AppLambdaFunction"
               },
-              "CodeSha256": "ksYGIQgKGOGX7capGB4MuiR5FgP/LrYfk6smVaDluQ0="
+              "CodeSha256": "5/mU0mY7gzyJlB+J8bowqG0xmq2FgbSa8ZNBCdAAWhE="
+            }
+          },
+          "CreateUserLambdaVersionRtZuL5cSi8t9SM5rijDFjEseuNWuX3S2gF5Rko6YRU": {
+            "Type": "AWS::Lambda::Version",
+            "DeletionPolicy": "Retain",
+            "Properties": {
+              "FunctionName": {
+                "Ref": "CreateUserLambdaFunction"
+              },
+              "CodeSha256": "5/mU0mY7gzyJlB+J8bowqG0xmq2FgbSa8ZNBCdAAWhE="
             }
           },
           "ApiGatewayRestApi": {
@@ -555,7 +555,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1620477085202": {
+          "ApiGatewayDeployment1620509416380": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -713,19 +713,10 @@
               "Name": "sls-my-express-application-dev-ServerlessDeploymentBucketName"
             }
           },
-          "CreateUserLambdaFunctionQualifiedArn": {
-            "Description": "Current Lambda function version",
-            "Value": {
-              "Ref": "CreateUserLambdaVersionVK4ZSGLWZhboggHJvnjT3fUIFWYOFg0BQQy0ZOjt78I"
-            },
-            "Export": {
-              "Name": "sls-my-express-application-dev-CreateUserLambdaFunctionQualifiedArn"
-            }
-          },
           "GetUserLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetUserLambdaVersionS3dHH1f8cao1gKKcsEVDl2cRQxZ8TiMZNKB8qsIx30"
+              "Ref": "GetUserLambdaVersionf6xzNW48lbnH3VsKg2bkX9RA0KWYDe6lvAL157U9A"
             },
             "Export": {
               "Name": "sls-my-express-application-dev-GetUserLambdaFunctionQualifiedArn"
@@ -734,10 +725,19 @@
           "AppLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AppLambdaVersionGhswz2VRNC3vbqowP80dv66DpvtjJLC30tpePEAqSYM"
+              "Ref": "AppLambdaVersionTZXeenJg5Db8M1RwTYbiKEmaWqZUFL9ajbLC4LI"
             },
             "Export": {
               "Name": "sls-my-express-application-dev-AppLambdaFunctionQualifiedArn"
+            }
+          },
+          "CreateUserLambdaFunctionQualifiedArn": {
+            "Description": "Current Lambda function version",
+            "Value": {
+              "Ref": "CreateUserLambdaVersionRtZuL5cSi8t9SM5rijDFjEseuNWuX3S2gF5Rko6YRU"
+            },
+            "Export": {
+              "Name": "sls-my-express-application-dev-CreateUserLambdaFunctionQualifiedArn"
             }
           },
           "ServiceEndpoint": {
@@ -853,9 +853,15 @@
       "vpc": {}
     },
     "custom": {
-      "tableName": "users-table-dev"
+      "tableName": "users-table-dev",
+      "dynamodb": {
+        "start": {
+          "migrate": true
+        }
+      }
     },
     "plugins": [
+      "serverless-dynamodb-local",
       "serverless-offline"
     ],
     "pluginsData": {},
@@ -876,7 +882,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "AppLambdaVersionGhswz2VRNC3vbqowP80dv66DpvtjJLC30tpePEAqSYM"
+        "versionLogicalId": "AppLambdaVersionTZXeenJg5Db8M1RwTYbiKEmaWqZUFL9ajbLC4LI"
       },
       "getUser": {
         "handler": "index.handler",
@@ -891,7 +897,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "GetUserLambdaVersionS3dHH1f8cao1gKKcsEVDl2cRQxZ8TiMZNKB8qsIx30"
+        "versionLogicalId": "GetUserLambdaVersionf6xzNW48lbnH3VsKg2bkX9RA0KWYDe6lvAL157U9A"
       },
       "createUser": {
         "handler": "index.handler",
@@ -906,7 +912,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "CreateUserLambdaVersionVK4ZSGLWZhboggHJvnjT3fUIFWYOFg0BQQy0ZOjt78I"
+        "versionLogicalId": "CreateUserLambdaVersionRtZuL5cSi8t9SM5rijDFjEseuNWuX3S2gF5Rko6YRU"
       }
     },
     "resources": {
@@ -963,7 +969,7 @@
     "artifact": "/Users/georgeaoyagi/Documents/code projects/bew2.1/ServerlessAPI/.serverless/my-express-application.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/my-express-application/dev/1620477100962-2021-05-08T12:31:40.962Z",
+    "artifactDirectoryName": "serverless/my-express-application/dev/1620509433541-2021-05-08T21:30:33.541Z",
     "artifact": "my-express-application.zip"
   }
 }
